@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="register-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Register Now!</h1>
+            </div>
+            <form>
+                <div class="fName">
+                    <label for="firstName" class="firstName">First Name</label><br>
+                    <input type="text" required name="firstName" title="Enter Your First Name" id="firstName" placeholder="First Name">
+                </div>
+                <div class="lName">
+                    <label for="lastName" class="lastName">Last Name</label><br>
+                    <input type="text" required name="lastName" title="Enter Your Last Name" id="lastName" placeholder="Last Name">
+                </div>
+                <div class="dob">
+                    <label for="dob" class="dateOfBirth">Date Of Birth</label><br>
+                    <input type="date" required name="dob" id="dob" title="Your Date Of Birth">
+                </div>
+                <div class="gender">
+                    <label for="gender" class="Gender">Gender</label><br>
+
+                    <input type="radio" required name="gender" title="Select if you male" id="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" required name="gender" title="Select if you female" id="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" required name="gender" title="If you not male or female to select it" id="others">
+                    <label for="others">Others</label>
+                </div>
+                <div class="mail">
+                    <label for="email" class="email">Email</label><br>
+                    <input type="email" required name="email" title="Enter Your Email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="pass">
+                    <label for="password" class="password">Password</label><br>
+                    <input type="password" required name="password" title="Enter Password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="c-pass">
+                    <label for="confirm-password" class="confirm-password">Confirm Password</label><br>
+                    <input type="password" required name="confirm-password" title="Confirm Your Password" id="confirm-password" placeholder="Confirm Password">
+                </div>
+                <div class="submit">
+                    <button class="btn" title="Fill up the form to Register">Register</button>
+                </div>
+                <div class="have">
+                    <p>Already have an account! <a href="login.html" title="Already have an account to login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.container {
+    background-color: rgb(240, 240, 240);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: rgb(230, 230, 240);
+    z-index: 2;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.col ul {
+    display: flex;
+}
+
+.col ul li a {
+    padding: 7px 10px;
+    border: 1px solid black;
+    display: inline-block;
+    color: darkblue;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+#Home {
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+
+#Agents {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+
+.col ul li a:focus {
+    background-color: rgb(215, 100, 0);
+    color: white;
+    border-color: rgb(215, 100, 0);
+}
+
+.banner-article h1 {
+    font-size: 4rem;
+    line-height: 60px;
+}
+
+.banner-article p {
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+
+/* header section ends  */
+/* row1 start  */
+.row1 {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+    height: 90vh;
+    align-items: center;
+}
+
+.col-real-estate {
+    width: 50%;
+    padding: 0 20px;
+}
+
+span {
+    background-image: linear-gradient(to right, rgb(255, 70, 3), rgba(255, 94, 0, 0.823));
+    background-clip: text;
+    color: transparent;
+}
+
+.real-estate-room {
+    width: 100%;
+    height: 100%;
+}
+
+/* row 1 ends  */
+/* row 2 start  */
+.latest-pro {
+    text-align: center;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.latest-pro h2 {
+    color: darkblue;
+}
+
+.other-estates {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.estates {
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px gray;
+    transition: all ease 0.4s;
+}
+
+.estates:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.estate-img {
+    width: 100%;
+    height: 250px;
+}
+
+.estate-details {
+    background-image: linear-gradient(to right, orange, rgb(200, 0, 0));
+    padding: 15px;
+}
+
+.estate-details h2 {
+    color: white;
+    padding-top: 10px;
+}
+
+.estate-details p {
+    margin: 10px 0;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.estate-details p a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.view-property-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.view-property-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* footer section start  */
+.row3 {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    margin-top: 20px;
+    align-items: baseline;
+}
+
+.col-about {
+    width: 50%;
+}
+
+.row3 p {
+    margin: 10px 0;
+    color: gray;
+}
+
+.row3 h2 {
+    color: gray;
+    margin: 10px 0;
+}
+
+.row3 ul li a {
+    display: inline-block;
+    margin: 5px 0;
+    color: gray;
+}
+
+.row3 ul li a:hover {
+    text-decoration: underline;
+    color: darkorange;
+}
+
+.categories-contact {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.row3 h2 {
+    margin-bottom: 10px;
+}
+
+/* copyright footer  */
+.copyright-footer {
+    background-color: rgb(30, 30, 30);
+    color: gray;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-footer a {
+    color: gray;
+}
+
+.copyright-footer a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .row1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row3 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col-about {
+        width: 100%;
+    }
+
+    .categories-contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col-real-estate {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .banner-article h1 {
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+
+    .banner-article p {
+        text-align: justify;
+        line-height: 23px;
+    }
+
+    .footer p {
+        flex-direction: column;
+    }
+
+    .footer img {
+        margin: 10px 0;
+        width: 50px;
+    }
+}
